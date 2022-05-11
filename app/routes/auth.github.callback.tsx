@@ -1,6 +1,6 @@
 import { LoaderFunction, redirect } from 'remix';
 import { auth, sessionStorage } from '~/auth.server';
-import { db } from '~/utils/db.server';
+// import { db } from '~/utils/db.server';
 
 export const loader: LoaderFunction = async ({ request, params, context }) => {
   const session = await sessionStorage.getSession(request.headers.get('Cookie'));

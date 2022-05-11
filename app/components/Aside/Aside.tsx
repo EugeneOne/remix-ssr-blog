@@ -36,14 +36,14 @@ const Aside: React.FC<{ context?: GlobalContext }> = (props) => {
         })}
       </ul>
 
-      <Divider orientation='left'>标签</Divider>
+      {/* <Divider orientation='left'>标签</Divider>
       <div>
         {context?.tagList.map((t, i) => (
           <Tag key={t.name} color={context.tagColor[t.name]}>
             <Link to={`/tags/?tag=${t.name}`}>{t.name}</Link>
           </Tag>
         ))}
-      </div>
+      </div> */}
 
       {config.friendLinks && (
         <>

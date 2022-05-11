@@ -4,11 +4,11 @@ import {
 import dayjs from 'dayjs';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
-import { UserInfo } from '~/export.types';
+// import { UserInfo } from '~/export.types';
 import useModal from '~/hooks/useModal';
 import useRemixFetcherSubmit from '~/hooks/useRemixFetcherSubmit';
 
-import { User } from '@prisma/client';
+// import { User } from '@prisma/client';
 
 interface UserManagerProps {}
 

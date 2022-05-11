@@ -3,7 +3,7 @@ import { UserInfo } from '~/export.types';
 import { parseFormData } from '~/utils';
 import { db } from '~/utils/db.server';
 
-import { Category, Post, Tag, User } from '@prisma/client';
+// import { Category, Post, Tag, User } from '@prisma/client';
 
 export const action: ActionFunction = async ({ request }) => {
   const query = await parseFormData(request);

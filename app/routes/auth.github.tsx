@@ -1,6 +1,6 @@
 import { ActionFunction, createCookie, redirect } from 'remix';
 import { auth, sessionStorage } from '~/auth.server';
-import { db } from '~/utils/db.server';
+// import { db } from '~/utils/db.server';
 
 export const action: ActionFunction = async ({ request }) => {
   const from = await request.formData();

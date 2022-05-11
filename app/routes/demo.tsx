@@ -1,6 +1,6 @@
 import { ActionFunction, redirect } from 'remix';
 import { auth } from '~/auth.server';
-import { db } from '~/utils/db.server';
+// import { db } from '~/utils/db.server';
 
 export const action: ActionFunction = async ({ request }) => {
   const data = await auth.isAuthenticated(request);

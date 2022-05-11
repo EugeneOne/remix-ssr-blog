@@ -45,10 +45,10 @@ export const loader: LoaderFunction = async ({ request }) => {
   const { user, isMaster } = await getUserProfile(request);
   const tagList = await api_get_tags();
 
-  const tagColor = tagList.reduce((map, item, index) => {
-    map[item.name] = tagColorList[index] || tagColorList[Math.floor(Math.random() * 10)];
-    return map;
-  }, {} as any);
+  // const tagColor = tagList.reduce((map, item, index) => {
+  //   map[item.name] = tagColorList[index] || tagColorList[Math.floor(Math.random() * 10)];
+  //   return map;
+  // }, {} as any);
 
   let unReadList: UnReadItem[] = [];
   if (user) {
@@ -59,7 +59,7 @@ export const loader: LoaderFunction = async ({ request }) => {
     user,
     isMaster,
     tagList,
-    tagColor,
+    // tagColor,
     unReadList,
   };
 };

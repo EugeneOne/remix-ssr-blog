@@ -3,7 +3,7 @@ import { Authenticator } from 'remix-auth';
 import { GitHubStrategy } from 'remix-auth-github';
 import config from '~/config.json';
 
-import { db } from './utils/db.server';
+// import { db } from './utils/db.server';
 
 import type { GitHubExtraParams, GitHubProfile } from 'remix-auth-github';
 if (!process.env.GITHUB_CLIENT_ID) {
@@ -45,18 +45,18 @@ auth.use(
     async ({ profile, accessToken, extraParams }) => {
       if (profile) {
         // 更新或创建！
-        await db.user.upsert({
-          where: { id: profile._json.id },
-          update: {
-            username: profile.displayName,
-            github: JSON.stringify(profile._json),
-          },
-          create: {
-            username: profile.displayName,
-            github: JSON.stringify(profile._json),
-            id: profile._json.id,
-          },
-        });
+        // await db.user.upsert({
+        //   where: { id: profile._json.id },
+        //   update: {
+        //     username: profile.displayName,
+        //     github: JSON.stringify(profile._json),
+        //   },
+        //   create: {
+        //     username: profile.displayName,
+        //     github: JSON.stringify(profile._json),
+        //     id: profile._json.id,
+        //   },
+        // });
       }
       return { profile, accessToken, extraParams };
     }

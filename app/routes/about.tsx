@@ -3,7 +3,7 @@ import { getUserProfile } from '~/auth.server';
 import Discuss from '~/components/Discuss/Discuss';
 import { PostListItem } from '~/export.types';
 import { getDiscussCount } from '~/utils';
-import { db } from '~/utils/db.server';
+// import { db } from '~/utils/db.server';
 
 import { api_get_post_by_id } from './api/posts';
 
@@ -11,7 +11,7 @@ export const loader: LoaderFunction = async ({ request, params }) => {
   const data = await api_get_post_by_id('1024');
   const { user } = await getUserProfile(request);
   if (user) {
-    await db.msg.deleteMany({ where: { postId: '1024' } });
+    // await db.msg.deleteMany({ where: { postId: '1024' } });
   }
   return { data, postId: '1024' };
 };

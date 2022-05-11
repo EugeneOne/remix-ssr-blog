@@ -9,7 +9,7 @@ import { PostListItem } from '~/export.types';
 import {
     getDiscussCount, getHashList, HashListItem, parseFormData, parseUrl, translateMd
 } from '~/utils';
-import { db } from '~/utils/db.server';
+// import { db } from '~/utils/db.server';
 
 import { CalendarOutlined } from '@ant-design/icons';
 
@@ -20,7 +20,7 @@ export const loader: LoaderFunction = async ({ request, params }) => {
   if (params.postId === '1024') return redirect('/about');
   const { user } = await getUserProfile(request);
   if (user) {
-    db.msg.deleteMany({ where: { postId: params.postId, userId: user.id } });
+    // db.msg.deleteMany({ where: { postId: params.postId, userId: user.id } });
   }
   const data = await api_get_post_by_id(params.postId || '');
   if (!data) return redirect('/404');
