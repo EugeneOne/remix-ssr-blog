@@ -1,0 +1,62 @@
+# github 登录名，唯一标识是不是 master [博主 github 登录名]
+githubLoginName: alvin0216
+
+# 博客logo
+# blogLogo: /logo.png
+blogLogo: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/logo.png
+
+# 博客名称
+blogName: Peace and Love
+
+# 侧边栏
+# avatar: /avatar.png
+avatar: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/avatar.png
+
+# 侧边栏 图片下面的别名
+asideName: Alvin
+
+# 座右铭
+motto: Web Developer & Designer
+
+# 社交平台 github icon 内置
+social:
+  github:
+    link: https://github.com/alvin0216
+    icon: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/github.png
+  juejin:
+    link: https://juejin.im/user/5acac6c4f265da2378408f92
+    icon: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/juejin.png
+
+# 赞助
+# 感谢词
+donateWord: 如果你觉得主题还不错，可以为作者贡献一杯奶茶。
+donate:
+  # AliPay: /alipay.png
+  # WeChat: /wechat.png
+  AliPay: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/alipay.png
+  WeChat: https://alvin-cdn.oss-cn-shenzhen.aliyuncs.com/images/wechat.png
+
+# seo 相关
+seo:
+  # 标题 可以不填, 不填的话取 blogName
+  title: Alvin's blog
+  # 作者
+  author: alvin
+  # 用于告诉搜索引擎，你网页的关键字
+  keywords: alvin, remix, ssr, blog, react, frontend, 博客, Typescript
+  # 网站内容的描述
+  description: Personal blog developed based on remix, 基于 remix 开发的个人博客
+  # 可以不填
+  url: https://remix.alvin.run
+
+# 友链
+friendLinks:
+  - Dan's blog
+  - https://overreacted.io/
+  # ...
+  - alvin's blog
+  - https://alvin.run
+  #
+# 备案号
+# record: '粤ICP备20056911号'
+
